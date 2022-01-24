@@ -1,0 +1,16 @@
+{
+  "version": "0.2",
+  "language": "en-US",
+  "ignorePaths": [
+    "package-lock.json",
+    "**/node_modules/**",
+    "packages/*/lib/**",
+    "types/**",
+    ".storybook/public/**",
+    "**/.DS_Store",
+    "**/*.zip",
+    "**/*.tgz"
+  ],
+  "allowCompoundWords": true,
+  "words": []
+}
