@@ -1,0 +1,76 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "plugins": ["react", "prettier", "react-hooks"],
+      "files": ["src/**/*.@(js|jsx)", "scripts/**/*.@(js|jsx)"],
+      "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": [
+          "off",
+          {
+            "additionalHooks": "useAfterInitialEffect"
+          }
+        ],
+        "prettier/prettier": "error",
+        "semi": "off",
+        "react/prop-types": "error",
+        "no-duplicate-imports": "error",
+        "react/jsx-props-no-spreading": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/self-closing-comp": [
+          "error",
+          {
+            "component": true,
+            "html": true
+          }
+        ],
+        "no-case-declarations": "error",
+        "no-debugger": "error",
+        "react/jsx-fragments": ["error", "element"],
+        "no-underscore-dangle": "off",
+        "prefer-promise-reject-errors": "error",
+        "no-param-reassign": "off",
+        "func-names": "error",
+        "eqeqeq": "error",
+        "no-tabs": "error",
+        "no-plusplus": "error",
+        "no-use-before-define": "error",
+        "no-loop-func": "error",
+        "no-shadow": "error",
+        "no-eval": "error",
+        "camelcase": "error",
+        "consistent-return": "error",
+        "default-case": "error",
+        "radix": "error",
+        "vars-on-top": "error",
+        "guard-for-in": "error",
+        "no-return-assign": "error",
+        "no-prototype-builtins": "error",
+        "prefer-destructuring": "error",
+        "max-len": [
+          "error",
+          {
+            "code": 180
+          }
+        ],
+        "no-mixed-operators": "error",
+        "no-var": "error",
+        "global-require": "error",
+        "no-useless-constructor": "error",
+        "class-methods-use-this": "error"
+      }
+    }
+  ]
+}
