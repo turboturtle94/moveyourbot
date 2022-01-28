@@ -8,7 +8,7 @@ a game where you need to move your bot to an end point within specified time fra
 
 ### Introduction
 
-This document describes the standardized commit message format used by the CS Constellation components repository.
+This document describes the standardized commit message format used by this repository.
 It is an extension of the base format described on the Conventional Commits site
 [[↗]](https://www.conventionalcommits.org/en/v1.0.0/). It will be enforced by the commitlint package
 [[↗]](https://commitlint.js.org/#/) when authoring a commit, and as part of our CI process. The
