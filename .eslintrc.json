@@ -23,7 +23,6 @@
             "additionalHooks": "useAfterInitialEffect"
           }
         ],
-        "prettier/prettier": "error",
         "semi": "off",
         "react/prop-types": "error",
         "no-duplicate-imports": "error",
