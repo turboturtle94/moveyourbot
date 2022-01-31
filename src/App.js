@@ -2,6 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader';
 import './App.css';
 import ScoreBoard from './ScoreBoard/ScoreBoard';
+import GameBoard from './GameBoard/GameBoard';
 function App() {
   return (
     <div className='App'>
@@ -10,7 +11,7 @@ function App() {
       </div>
       <div className='app-body'>
         <div className="app-body__board">
-          Board
+          <GameBoard difficulty="easy" />
         </div>
         <div className="app-body__controls">
           Controls
