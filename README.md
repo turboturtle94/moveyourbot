@@ -2,7 +2,11 @@
 
 # moveyourbot
 
-a game where you need to move your bot to an end point within specified time frame
+a game where you need to move your bot to an end point within specified time frame.
+
+run "npm start" to start the server, default port - 3000
+
+watch and live reload are enabled.
 
 # Conventional Commits
 
