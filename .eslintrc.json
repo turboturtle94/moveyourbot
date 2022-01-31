@@ -44,7 +44,6 @@
         "func-names": "error",
         "eqeqeq": "error",
         "no-tabs": "error",
-        "no-plusplus": "error",
         "no-use-before-define": "error",
         "no-loop-func": "error",
         "no-shadow": "error",

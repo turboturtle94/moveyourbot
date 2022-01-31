@@ -1,18 +1,21 @@
 .App{
   background-color: black;
   color: gainsboro;
+  height: calc(90vh - 2em);
+  font-family: Orbitron;
 }
 
 .app-body{
   display: flex;
+  height: inherit;
 }
 
 .app-body__board{
-  background-color: gold;
   flex-basis: 70%;
+  height:inherit;
 }
 
 .app-body__controls{
-  background-color: hotpink;
+  background-color: lightgray;
   flex-basis: 30%;
 }
