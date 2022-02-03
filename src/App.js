@@ -11,7 +11,7 @@ function App() {
       </div>
       <div className='app-body'>
         <div className="app-body__board">
-          <GameBoard difficulty="easy" />
+          <GameBoard difficulty="easy" startingIndex={0} endIndex={3} />
         </div>
         <div className="app-body__controls">
           Controls
