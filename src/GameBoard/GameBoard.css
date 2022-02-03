@@ -30,3 +30,33 @@
     width:50%;
     height:50%;
 }
+
+@keyframes zoom-in-on-board {
+    0%{
+       transform: scale(0,0);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+}
+
+@keyframes zoom-out-on-board {
+    0%{
+       transform: scale(1,1);
+    }
+    100%{
+      transform: scale(0,0);
+    }
+}
+.bot--animate--in{
+    animation-name: zoom-in-on-board;
+    animation-duration: 1s;
+    animation-timing-function:ease;
+}
+
+.bot--animate--out{
+    animation-name: zoom-out-on-board;
+    animation-duration: 1s;
+    animation-timing-function:ease;
+}
+
