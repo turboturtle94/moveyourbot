@@ -4,6 +4,7 @@ export default class Bot {
         this.yCoord = y;
         this.prevXCoord = x;
         this.prevYCoord = y;
+        this.weight = 0;
     }
     getCurrentPosition() {
         return {
@@ -26,18 +27,38 @@ export default class Bot {
         this.prevYCoord = y;
     }
     moveBot(direction) {
+        const { x, y } = this.getCurrentPosition();
+        this.setPrevPosition(x, y);
         switch (direction)
         {
-            case "E": return this.getCurrentPosition();
-            case "W": return this.getCurrentPosition();
-            case "S": return this.getCurrentPosition();
-            case "N": return this.getCurrentPosition();
-            case "NE": return this.getCurrentPosition();
-            case "NW": return this.getCurrentPosition();
-            case "NE": return this.getCurrentPosition();
-            case "SE": return this.getCurrentPosition();
-            case "SW": return this.getCurrentPosition();
+            case "E":
+                this.setCurrentPosition(x, y + 1);
+                break;
+            case "W":
+                this.setCurrentPosition(x, y - 1);
+                break;
+            case "S":
+                this.setCurrentPosition(x + 1, y);
+                break;
+            case "N":
+                this.setCurrentPosition(x - 1, y);
+                break;
+            case "NE":
+                this.setCurrentPosition(x - 1, y + 1);
+                break;
+            case "NW":
+                this.setCurrentPosition(x - 1, y - 1);
+                break;
+            case "SE":
+                this.setCurrentPosition(x + 1, y + 1);
+                break;
+            case "SW":
+                this.setCurrentPosition(x + 1, y - 1);
+                break;
             default: return this.getCurrentPosition();
         }
+        return this.getCurrentPosition();
     }
+
+
 }
